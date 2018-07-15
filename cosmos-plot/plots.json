@@ -1,0 +1,451 @@
+[
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "UTC Time",
+        "values": [
+            {
+                "data": "node_loc_utc",
+                "logdata": 0,
+                "name": "UTC Time",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "s"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "Lat/Long ADCS",
+        "values": [
+            {
+                "data": "node_loc_pos_geod",
+                "logdata": 0,
+                "name": "Lat/Long",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "s"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1
+    },
+    {
+        "agent": "otb",
+        "node": "otb",
+        "title": "Lat/Long OTB",
+        "values": [
+            {
+                "data": "node_loc_pos_geod",
+                "logdata": 0,
+                "name": "Lat/Long",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "s"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "Estimated Attitude Angles [deg]",
+        "values": [
+            {
+                "data": "roll",
+                "logdata": 0,
+                "name": "roll",
+                "precision": 2,
+                "scale": 1,
+                "units": "deg"
+            },
+            {
+                "data": "pitch",
+                "logdata": 0,
+                "name": "pitch",
+                "precision": 4,
+                "scale": 1,
+                "units": "deg"
+            },
+            {
+                "data": "yaw",
+                "logdata": 0,
+                "name": "yaw",
+                "precision": 4,
+                "scale": 1,
+                "units": "deg"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 180
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "Angular Velocity [rad/s]",
+        "values": [
+            {
+                "data": "device_imu_omega_000",
+                "logdata": 0,
+                "name": "omega",
+                "precision": 2,
+                "scale": 1,
+                "units": "rad/s"
+            }
+        ],
+        "visible": 1,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 0.1
+    },
+    {
+        "agent": "motion",
+        "node": "otb",
+        "title": "Angular Velocity [rad/s]",
+        "values": [
+            {
+                "data": "device_mcc_o_000",
+                "logdata": 0,
+                "name": "omega",
+                "precision": 4,
+                "scale": 1,
+                "units": "rad/s"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 0.1
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "adcs_alpha",
+        "values": [
+            {
+                "data": "device_imu_alpha_000",
+                "logdata": 0,
+                "name": "alpha",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "rad/s2"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 0.01
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "adcs_mtr",
+        "values": [
+            {
+                "data": "device_mtr_mom_000",
+                "logdata": 0,
+                "name": "mtr_x",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "A-m2"
+            },
+            {
+                "data": "device_mtr_mom_001",
+                "logdata": 0,
+                "name": "mtr_y",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "A-m2"
+            },
+            {
+                "data": "device_mtr_mom_002",
+                "logdata": 0,
+                "name": "mtr_z",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "A-m2"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "Reaction Wheel Speed [rpm]",
+        "values": [
+            {
+                "data": "device_rw_omg_000",
+                "logdata": 0,
+                "name": "rw_x",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "rpm"
+            },
+            {
+                "data": "device_rw_omg_001",
+                "logdata": 0,
+                "name": "rw_y",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "rpm"
+            },
+            {
+                "data": "device_rw_omg_002",
+                "logdata": 0,
+                "name": "rw_z",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "rpm"
+            }
+        ],
+        "visible": 1,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 10000
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "Magnetic Field [T]",
+        "values": [
+            {
+                "data": "device_imu_mag_000",
+                "logdata": 0,
+                "name": "mag",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "T"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 0.0006
+    },
+    {
+        "agent": "otb",
+        "node": "otb",
+        "title": "Magnetic Field in geocentric frame [T]",
+        "values": [
+            {
+                "data": "node_loc_bearth",
+                "logdata": 0,
+                "name": "mag geo",
+                "precision": 4,
+                "scale": 0.1,
+                "units": "T"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 0.0006
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "adcs_euler",
+        "values": [
+            {
+                "data": "device_imu_euler_000",
+                "logdata": 0,
+                "name": "angle",
+                "precision": 4,
+                "scale": 1,
+                "units": "deg"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1.2
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "adcs_lvlh",
+        "values": [
+            {
+                "data": "node_loc_att_lvlh_s",
+                "logdata": 0,
+                "name": "q",
+                "precision": 4,
+                "scale": 1,
+                "units": "q"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1.2
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "adcs_lvlh_velocity",
+        "values": [
+            {
+                "data": "node_loc_att_lvlh_v",
+                "logdata": 0,
+                "name": "q",
+                "precision": 4,
+                "scale": 1,
+                "units": "q"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1
+    },
+    {
+        "agent": "motion",
+        "node": "otb",
+        "title": "otb_lvlh",
+        "values": [
+            {
+                "data": "node_loc_att_lvlh_s",
+                "logdata": 0,
+                "name": "q",
+                "precision": 4,
+                "scale": 1,
+                "units": "q"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1.2
+    },
+    {
+        "agent": "adcs",
+        "node": "neutron1",
+        "title": "adcs_icrf",
+        "values": [
+            {
+                "data": "node_loc_att_icrf_s",
+                "logdata": 0,
+                "name": "q",
+                "precision": 4,
+                "scale": 1,
+                "units": "q"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1.2
+    },
+    {
+        "agent": "motion",
+        "node": "otb",
+        "title": "otb_icrf",
+        "values": [
+            {
+                "data": "node_loc_att_icrf_s",
+                "logdata": 0,
+                "name": "q",
+                "precision": 4,
+                "scale": 1,
+                "units": "q"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "",
+        "xRange": 100,
+        "yLabel": "",
+        "yRange": 1.2
+    },
+    {
+        "agent": "eps",
+        "node": "neutron1",
+        "title": "EPS Battery Charge",
+        "values": [
+            {
+                "data": "device_batt_charge_000",
+                "logdata": 0,
+                "name": "",
+                "precision": 4,
+                "scale": 1,
+                "units": "A-hrs"
+            }
+        ],
+        "visible": 1,
+        "xLabel": "Time",
+        "xRange": 1,
+        "yLabel": "Battery Charge",
+        "yRange": 12
+    },
+    {
+        "agent": "eps",
+        "node": "neutron1",
+        "title": "EPS Batt Percentage",
+        "values": [
+            {
+                "data": "device_batt_percentage_000",
+                "logdata": 0,
+                "name": "",
+                "precision": 4,
+                "scale": 1,
+                "units": "%"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "Time",
+        "xRange": 10,
+        "yLabel": "Percentage",
+        "yRange": 100
+    },
+    {
+        "agent": "eps",
+        "node": "neutron1",
+        "title": "EPS Time Remaining",
+        "values": [
+            {
+                "data": "device_batt_time_remaining_000",
+                "logdata": 0,
+                "name": "",
+                "precision": 4,
+                "scale": 1,
+                "units": "hrs"
+            }
+        ],
+        "visible": 0,
+        "xLabel": "Time",
+        "xRange": 10,
+        "yLabel": "Batt Time Remaining",
+        "yRange": 400
+    }
+]
+

@@ -1,0 +1,32 @@
+version: '{build}'
+branches:
+  only:
+  - dev
+  
+# clone directory
+clone_folder: c:\cosmos\source\tools\cosmos-plot
+
+# fetch repository as zip archive
+shallow_clone: true
+
+install:
+  - set QTDIRLIBRARIES=C:\Qt\5.5\mingw492_32\bin
+  - set QTDIRBUILD=C:\Qt\Tools\mingw492_32\bin
+  - rename "C:\Program Files\Git\usr\bin\sh.exe" "sh-ignored.exe"
+  - set PATH=%QTDIRLIBRARIES%;%QTDIRBUILD%;%PATH%
+
+# scripts to run before build
+before_build:
+  - git clone -b dev https://bitbucket.org/cosmos-project/core.git c:\cosmos\source\core --depth 1 
+  - git clone https://bitbucket.org/cosmos-project/tool-libraries.git c:\cosmos\tools\libraries --depth 1
+
+build_script:
+  - qmake CosmosPlot.pro
+  - mingw32-make -j8
+
+test_script:
+
+artifacts:
+  - path: release\CosmosPlot.exe
+  - path: plot*.json
+    name: CosmosPlot

@@ -1,0 +1,43 @@
+[
+{
+    "title":"CPU load 1",
+            "node":"cpu_",
+            "agent":"cpu",
+            "scale":5,
+            "visible":1,
+            "logdata":1,
+            "xLabel":"Time",
+            "yLabel":"CPU load",
+            "xRange":600,
+            "values": [
+                {
+                    "data":"device_cpu_load_000",
+                    "name":"cpu load",
+                    "scale":0.1,
+                    "units":""
+                }
+            ]
+
+},
+{
+    "title":"CPU load 2",
+            "node":"cpu_",
+            "agent":"cpu",
+            "scale":5,
+            "visible":1,
+            "logdata":0,
+            "xRange":60,
+            "values": [
+                {
+                    "data":"device_cpu_load_000",
+                    "name":"cpu load",
+                    "scale":0.1,
+                    "units":""
+                }
+            ]
+
+}
+]
+
+
+

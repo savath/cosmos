@@ -1,0 +1,43 @@
+[
+{
+    "title":"Attitude",
+            "node":"otb",
+            "agent":"motion",
+            "visible":1,
+            "xLabel":"Time",
+            "yLabel":"CPU load",
+            "xRange":60,
+            "yRange":1.2,
+            "values": [
+                {
+                    "data":"node_loc_att_icrf_s",
+                    "name":"q",
+                    "scale":1,
+                    "units":"uT"
+                }
+            ]
+
+},
+{
+    "title":"Angular Velocity",
+            "node":"otb",
+            "agent":"motion",
+            "visible":1,
+            "xLabel":"Time",
+            "yLabel":"CPU load",
+            "xRange":60,
+            "yRange":1.2,
+            "values": [
+                {
+                    "data":"node_loc_att_icrf_v",
+                    "name":"omega",
+                    "scale":1,
+                    "units":"uT"
+                }
+            ]
+
+}
+]
+
+
+

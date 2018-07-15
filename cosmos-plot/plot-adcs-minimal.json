@@ -1,0 +1,258 @@
+[
+{
+    "title":"UTC Time",
+            "node":"neutron1",
+            "agent":"adcs",
+            "xRange":100,
+            "yRange":1,
+            "visible":0,
+            "values": [
+                {
+                    "data":"node_loc_utc",
+                    "name":"UTC Time",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"s"
+                }
+            ]
+
+},
+{
+    "title":"Estimated Attitude Angles [deg]",
+            "node":"neutron1",
+            "agent":"adcs",
+            "visible":1,
+            "xRange":100,
+            "yRange":180,
+            "values": [
+                {
+                    "data":"roll",
+                    "name":"roll",
+                    "scale":1.,
+                    "precision":2,
+                    "units":"deg"
+                },
+                {
+                    "data":"pitch",
+                    "name":"pitch",
+                    "scale":1.,
+                    "precision":4,
+                    "units":"deg"
+                },
+                {
+                    "data":"yaw",
+                    "name":"yaw",
+                    "scale":1.,
+                    "precision":4,
+                    "units":"deg"
+                }
+
+
+            ]
+},
+{
+    "title":"Angular Velocity [rad/s]",
+            "node":"neutron1",
+            "agent":"adcs",
+            "xRange":100,
+            "yRange":.1,
+            "visible":1,
+            "values": [
+                {
+                    "data":"device_imu_omega_000",
+                    "name":"omega",
+                    "scale":1,
+                    "precision":2,
+                    "units":"rad/s"
+                }
+            ]
+
+},
+{
+    "title":"Angular Velocity [rad/s]",
+            "node":"otb",
+            "agent":"motion",
+            "xRange":100,
+            "yRange":.1,
+            "visible":0,
+            "values": [
+                {
+                    "data":"device_mcc_o_000",
+                    "name":"omega",
+                    "scale":1,
+                    "precision":4,
+                    "units":"rad/s"
+                }
+            ]
+
+},
+{
+    "title":"adcs_alpha",
+            "node":"neutron1",
+            "agent":"adcs",
+            "xRange":100,
+            "yRange":.01,
+            "visible":0,
+
+            "values": [
+                {
+                    "data":"device_imu_alpha_000",
+                    "name":"alpha",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"rad/s2"
+                }
+            ]
+
+},
+{
+    "title":"adcs_mtr",
+            "node":"neutron1",
+            "agent":"adcs",
+            "scale":0.01,
+            "visible":0,
+            "xRange":100,
+            "yRange":1.,
+            "values": [
+                {
+                    "data":"device_mtr_mom_000",
+                    "name":"mtr_x",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"A-m2"
+                },
+                {
+                    "data":"device_mtr_mom_001",
+                    "name":"mtr_y",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"A-m2"
+                },
+                {
+                    "data":"device_mtr_mom_002",
+                    "name":"mtr_z",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"A-m2"
+                }
+            ]
+},
+{
+    "title":"Reaction Wheel Speed [rpm]",
+            "node":"neutron1",
+            "agent":"adcs",
+            "visible":1,
+            "xRange":100,
+            "yRange":10000,
+            "values": [
+                {
+                    "data":"device_rw_omg_000",
+                    "name":"rw_x",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"rpm"
+                },
+                {
+                    "data":"device_rw_omg_001",
+                    "name":"rw_y",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"rpm"
+                },
+                {
+                    "data":"device_rw_omg_002",
+                    "name":"rw_z",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"rpm"
+                }
+            ]
+},
+{
+    "title":"Magnetic Field [T]",
+            "node":"neutron1",
+            "agent":"adcs",
+            "xRange":100,
+            "yRange":6e-4,
+            "visible":0,
+            "values": [
+                {
+                    "data":"device_imu_mag_000",
+                    "name":"mag",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"T"
+                }
+            ]
+
+},
+{
+    "title":"Magnetic Field in geocentric frame [T]",
+            "node":"otb",
+            "agent":"otb",
+            "xRange":100,
+            "yRange":6e-4,
+            "visible":0,
+            "values": [
+                {
+                    "data":"node_loc_bearth",
+                    "name":"mag geo",
+                    "scale":0.1,
+                    "precision":4,
+                    "units":"T"
+                }
+            ]
+
+},
+{
+    "title":"adcs_lvlh",
+            "node":"neutron1",
+            "agent":"adcs",
+            "visible":0,
+            "xRange":100,
+            "yRange":1.2,
+            "values": [
+                {
+                    "data":"node_loc_att_lvlh_s",
+                    "name":"q",
+                    "scale":1.,
+                    "precision":4,
+                    "units":"q"
+                }
+            ]
+},
+{
+    "title":"adcs_lvlh_velocity",
+            "node":"neutron1",
+            "agent":"adcs",
+            "visible":0,
+            "xRange":100,
+            "yRange":1,
+            "values": [
+                {
+                    "data":"node_loc_att_lvlh_v",
+                    "name":"q",
+                    "scale":1.,
+                    "precision":4,
+                    "units":"q"
+                }
+            ]
+},
+{
+    "title":"otb_icrf",
+            "node":"otb",
+            "agent":"motion",
+            "visible":0,
+            "xRange":100,
+            "yRange":1.2,
+            "values": [
+                {
+                    "data":"node_loc_att_icrf_s",
+                    "name":"q",
+                    "scale":1.,
+                    "precision":4,
+                    "units":"q"
+                }
+            ]
+}
+]
