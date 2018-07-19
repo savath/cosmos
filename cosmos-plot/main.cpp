@@ -2,7 +2,6 @@
 #include <QApplication>
 #include "plot.h"
 
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -12,14 +11,12 @@ int main(int argc, char *argv[])
 
     if (args.count() != 2) // need to find arguments before plotting
     {
-//        cout << "Usage: json file " << endl;
-//        exit (1);
+        //cout << "Usage: json file " << endl;
+        //exit (1);
         w.init_without_json();
 
-
-
     }
-    else{
+    else    {
 
         qDebug ("json file to load: %s", argv[1]);
 
@@ -27,11 +24,11 @@ int main(int argc, char *argv[])
         w.setup_plot_widget();
     }
 
-//    w.setup_init_widget();
+    //w.setup_init_widget();
 
     w.setup_find_widget();
-//    w.startTimers();
-//    w.setup_plot_widget();
+    //w.startTimers();
+    //w.setup_plot_widget();
     w.show();
 
     return a.exec();
